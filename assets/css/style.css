@@ -35,7 +35,6 @@ h2,
 h3 {
   font-family: Georgia, Times, "Times New Roman", serif;
   font-weight: 700;
-  /* bjt color: #4aaaa5; */
   color: #6fa4a3;
 }
 
@@ -75,13 +74,13 @@ h3 {
   color: #ffffff;
   text-align: center;
   text-decoration: none;
-  /* bjt background: #4aaaa5; */
   background: #6fa4a3;
 }
 
 nav {
   float: right;
   margin-top: 25px;
+  margin-right: 25px;
 }
 
 nav a {
@@ -108,7 +107,6 @@ footer {
   color: #cccccc;
   text-align: center;
   background: #666666;
-  /*  bjt border-top: 8px solid #4aaaa5; */
   border-top: #6fa4a3;
   height: 50px;
 }
@@ -167,11 +165,11 @@ h3, h2 {
   line-height: 30px;
   color: #ffffff;
   text-align: center;
-  /* bjt background: #4aaaa5; */
   background: #6fa4a3;
   border-bottom: 0;
 }
 
+/* index or about page */
 .auth-image {
   float: left;
   width: 200px;
@@ -216,10 +214,131 @@ input[type=submit] {
   font-size: 18px;
   color: #ffffff;
   cursor: pointer;
-  /* bjt background: #4aaaa5; */
   background: #6fa4a3;
   border: 0 none;
 }
 .links {
   color: #6fa4a3;
+}
+/* **************  980 px media query ************ */
+.container {
+  width: 100%;
+  max-width: 980px;
+  margin: 0;
+  clear: both;
+}
+.main-section {
+  float: left;
+  width: 70%;
+  max-width: 960px;
+  padding: 30px;
+  margin: 0 0 40px;
+  background: #ffffff;
+  border: 1px solid #dddddd;
+}
+nav a {
+  display: inline-block;
+  padding-left: 15px;
+  margin-left: 15px;
+  line-height: 18px;
+  color: #999;
+  text-decoration: none;
+  border-left: 1px solid #efefef;
+}
+/* **************  768 px media query ************ */
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    max-width: 768px;
+    margin: 0;
+    clear: both;
+  }
+  .main-section {
+    float: left;
+    width: 100%;
+    max-width: 768px;
+    padding: 30px;
+    margin: 0 0 40px;
+    background: #ffffff;
+    border: 1px solid #dddddd;
+  }
+ 
+/* header area */
+
+#logo {
+  width: 300px;
+  font-size: 25px;
+}
+
+nav a {
+  color: red; /* bjt */
+  /* color: #999; */
+}
+
+nav a:first-child {
+  border-left: 0 none;
+}
+
+}
+/* **************  640 px media query ************ */
+
+@media (max-width: 640px) {
+ 
+  #main-container {
+    padding-top: 30px;
+  }
+  .container {
+    max-width: 640px;
+  }
+  .main-section {
+    float: none;
+    max-width: 640px;
+    padding: 20px;
+    margin: 0 0 20px;
+    background: #ffffff;
+    border: 1px solid #dddddd;
+  }
+  .auth-image {
+   float: none;
+   width: 400px;
+   height: 400px;
+   
+  }
+  /* portfolio page */
+  .work {
+    float: none;
+    width: 100%;
+  }
+
+  /* contact info */
+  label,
+  input[type=text],
+  input[type=email],
+  textarea {
+    position: relative;
+    width: 90%;
+  }
+  
+/* nav area */
+  #masthead {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 0 40px 0;
+  }
+  #logo {
+    float: none;
+  }
+
+  nav {
+    float: none;
+    margin-right: 0;
+    text-align: center;
+  }
+
+  nav a {
+    /* color: #999; */
+    color: lawngreen; /* bjt delete this block and retest*/
+  }
+  
 }
