@@ -229,7 +229,7 @@ input[type=submit] {
 }
 .main-section {
   float: left;
-  width: 70%;
+  width: 90%;
   max-width: 960px;
   padding: 30px;
   margin: 0 0 40px;
@@ -325,9 +325,14 @@ nav a:first-child {
     margin: 0 auto;
     position: relative;
     padding: 0 0 40px 0;
+    text-align: center;
+    background: #6fa4a3;
+
   }
   #logo {
     float: none;
+    font-size: 60px;
+
   }
 
   nav {
